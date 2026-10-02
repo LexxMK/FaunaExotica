@@ -1,21 +1,23 @@
-/* Style général */
+/* ==============================
+   STYLE GÉNÉRAL
+   ============================== */
 
 body {
-    font-family: "Trebuchet MS", sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
     background-color: #f4f6f4;
     color: #333333;
-    line-height: 1.6;
 }
 
 
-/* En-tête */
+/* ==============================
+   EN-TÊTE
+   ============================== */
 
 .site-header {
     background-color: #2c5e3b;
     color: white;
-    padding: 1rem 3rem;
+    padding: 15px;
 
     display: flex;
     justify-content: space-between;
@@ -28,21 +30,22 @@ body {
 }
 
 .logo-titre img {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 
 .logo-titre h1 {
-    margin: 0 0 0 10px;
+    margin-left: 10px;
 }
 
-
-/* Navigation */
+.nav-links {
+    display: flex;
+}
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    margin-left: 1.5rem;
+    margin-left: 20px;
 }
 
 .nav-links a:hover {
@@ -50,185 +53,172 @@ body {
 }
 
 
-/* Contenu principal */
+/* ==============================
+   CONTENU
+   ============================== */
 
 .main-content {
     width: 90%;
-    max-width: 1200px;
-    margin: 2rem auto;
+    margin: 25px auto;
 }
 
 
-/* Sections */
+/* ==============================
+   SECTIONS
+   ============================== */
 
 .hero-section {
     background-color: white;
-    border: 2px solid #2c5e3b;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-section h2 {
     color: #2c5e3b;
 }
 
-
-/* Cartes de la page d'accueil */
-
-.content-grid {
-    display: flex;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+.hero-section article {
+    background-color: #e8f0e9;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 4px solid #2c5e3b;
 }
 
-.card {
-    background-color: white;
-    border: 2px solid #2c5e3b;
-    border-radius: 10px;
-    padding: 1.5rem;
-    flex: 1;
+.hero-section article h3 {
+    color: #2c5e3b;
 }
 
-.card h3 {
+.hero-section article a {
     color: #2c5e3b;
 }
 
 
-/* Pages des animaux */
+/* ==============================
+   CARTES
+   ============================== */
 
-.animal-profile {
-    width: 100%;
+.content-grid {
+    display: flex;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin-right: 15px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card h2 {
+    color: #2c5e3b;
 }
 
 
-/* Informations générales + image */
+/* ==============================
+   FICHE ANIMAL
+   ============================== */
+
+.animal-profile {
+    background-color: white;
+    padding: 20px;
+}
 
 .entete-animal {
-    background-color: white;
-    border: 2px solid #2c5e3b;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-
     display: flex;
-    align-items: center;
-    gap: 2rem;
 }
 
 .animal-info {
     flex: 1;
+    background-color: #f4f6f4;
+    padding: 20px;
+    margin-right: 25px;
 }
 
 .animal-info h2 {
-    color: #2c5e3b;
     margin-top: 0;
 }
 
-.animal-info > section {
-    background-color: #f4f6f4;
-    border: 1px solid #2c5e3b;
-    border-radius: 8px;
-    padding: 1rem;
+.animal-info strong {
+    color: #2c5e3b;
 }
 
 
-/* Image de l'animal */
+/* ==============================
+   IMAGE DE L'ANIMAL
+   ============================== */
 
 .animal-image {
-    flex: 1;
+    width: 40%;
     margin: 0;
     text-align: center;
 }
 
 .animal-image img {
     width: 100%;
-    max-width: 450px;
-    height: auto;
 }
 
 .animal-image figcaption {
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #666666;
-    margin-top: 0.5rem;
 }
 
 
-/* Sections des pages animales */
-
-.animal-profile > section {
-    background-color: white;
-    border: 2px solid #2c5e3b;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
-
-.animal-profile > section h3 {
-    color: #2c5e3b;
-}
-
-
-/* Image de l'habitat */
+/* ==============================
+   IMAGE DE L'HABITAT
+   ============================== */
 
 .habitat-image {
+    width: 70%;
+    margin: 20px auto;
     text-align: center;
-    margin: 1rem 0;
 }
 
 .habitat-image img {
     width: 100%;
-    max-width: 700px;
-    height: auto;
 }
 
 .habitat-image figcaption {
+    font-size: 14px;
     color: #666666;
-    font-size: 0.9rem;
 }
 
 
-/* Tableaux */
+/* ==============================
+   TABLEAUX
+   ============================== */
 
 table {
-    width: 100%;
+    width: 85%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin: 1.5rem 0;
     background-color: white;
-}
-
-caption {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #2c5e3b;
-    margin-bottom: 1rem;
+    border: 2px solid #2c5e3b;
 }
 
 th {
     background-color: #2c5e3b;
     color: white;
-    padding: 1rem;
-    text-align: left;
+    padding: 10px;
 }
 
 td {
-    padding: 1rem;
+    padding: 10px;
+    text-align: center;
     border-bottom: 1px solid #cccccc;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f4f6f4;
-}
 
-
-/* Sources */
+/* ==============================
+   SOURCES
+   ============================== */
 
 .sources {
-    background-color: white;
-    border: 2px solid #2c5e3b;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    background-color: #f4f6f4;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 .sources h3 {
@@ -240,24 +230,18 @@ tbody tr:nth-child(even) {
 }
 
 
-/* Formulaire */
+/* ==============================
+   FORMULAIRE
+   ============================== */
 
-.contact-section {
-    background-color: white;
-    border: 2px solid #2c5e3b;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-}
-
-.contact-section h2 {
-    color: #2c5e3b;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 fieldset {
-    border: 1px solid #2c5e3b;
-    border-radius: 8px;
-    padding: 1.5rem;
+    padding: 15px;
+    border: 2px solid #2c5e3b;
 }
 
 legend {
@@ -265,55 +249,33 @@ legend {
     font-weight: bold;
 }
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.3rem;
-}
-
 input,
 select,
 textarea {
-    width: 100%;
-    padding: 0.7rem;
-    font-family: inherit;
-    font-size: 1rem;
-    border: 1px solid #aaaaaa;
-    border-radius: 5px;
-}
-
-textarea {
-    height: 150px;
+    padding: 8px;
+    font-family: "Trebuchet MS", sans-serif;
+    margin-bottom: 10px;
 }
 
 button {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-
     background-color: #2c5e3b;
     color: white;
-
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-
-    font-family: inherit;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #21482d;
 }
 
 
-/* Pied de page */
+/* ==============================
+   PIED DE PAGE
+   ============================== */
 
 .site-footer {
     background-color: #2c5e3b;
     color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .site-footer a {
@@ -321,23 +283,235 @@ button:hover {
 }
 
 
-/* Pour les petits écrans */
+/* ==================================================
+   DRAGON DE KOMODO
+   ================================================== */
 
-@media (max-width: 800px) {
+.page-komodo {
+    background-color: #e8dfc8;
+    color: #29351f;
+}
 
-    .site-header {
-        flex-direction: column;
-    }
+.page-komodo .site-header {
+    background-color: #263d25;
+}
 
-    .nav-links {
-        margin-top: 1rem;
-    }
+.page-komodo .hero-section {
+    background-color: #f5f0df;
+}
 
-    .entete-animal {
-        flex-direction: column;
-    }
+.page-komodo .hero-section h2 {
+    color: #5b4328;
+}
 
-    .content-grid {
-        flex-direction: column;
-    }
+.page-komodo .hero-section article {
+    background-color: #e4dac0;
+    border-left-color: #8a6a3f;
+}
+
+.page-komodo .hero-section article h3 {
+    color: #5b4328;
+}
+
+.page-komodo .animal-profile {
+    background-color: #f5f0df;
+    border-left: 4px solid #8a6a3f;
+}
+
+.page-komodo .animal-info {
+    background-color: #e4dac0;
+}
+
+.page-komodo .animal-info strong {
+    color: #5b4328;
+}
+
+.page-komodo .sources {
+    background-color: #e4dac0;
+}
+
+.page-komodo .sources h3 {
+    color: #5b4328;
+}
+
+.page-komodo .sources a {
+    color: #5b4328;
+}
+
+.page-komodo .site-footer {
+    background-color: #263d25;
+}
+
+
+/* TABLEAU KOMODO */
+
+.page-komodo table {
+    border-color: #8a6a3f;
+}
+
+.page-komodo th {
+    background-color: #5b4328;
+    color: white;
+}
+
+.page-komodo td {
+    background-color: #e4dac0;
+    color: #29351f;
+    border-bottom-color: #b8a982;
+}
+
+
+/* ==================================================
+   TORTUE DE GALÁPAGOS
+   ================================================== */
+
+.page-tortue {
+    background-color: #dff3f0;
+    color: #183b3a;
+}
+
+.page-tortue .site-header {
+    background-color: #176b6b;
+}
+
+.page-tortue .hero-section {
+    background-color: #f2fffd;
+}
+
+.page-tortue .hero-section h2 {
+    color: #176b6b;
+}
+
+.page-tortue .hero-section article {
+    background-color: #d1eeea;
+    border-left-color: #3aa6a0;
+}
+
+.page-tortue .hero-section article h3 {
+    color: #176b6b;
+}
+
+.page-tortue .animal-profile {
+    background-color: #f2fffd;
+    border-left: 4px solid #3aa6a0;
+}
+
+.page-tortue .animal-info {
+    background-color: #d1eeea;
+}
+
+.page-tortue .animal-info strong {
+    color: #176b6b;
+}
+
+.page-tortue .sources {
+    background-color: #d1eeea;
+}
+
+.page-tortue .sources h3 {
+    color: #176b6b;
+}
+
+.page-tortue .sources a {
+    color: #176b6b;
+}
+
+.page-tortue .site-footer {
+    background-color: #176b6b;
+}
+
+
+/* TABLEAU TORTUE */
+
+.page-tortue table {
+    border-color: #3aa6a0;
+}
+
+.page-tortue th {
+    background-color: #176b6b;
+    color: white;
+}
+
+.page-tortue td {
+    background-color: #d1eeea;
+    color: #183b3a;
+    border-bottom-color: #8bc9c3;
+}
+
+
+/* ==================================================
+   DIABLE DE TASMANIE
+   ================================================== */
+
+.page-diable {
+    background-color: #292727;
+    color: #eeeeee;
+}
+
+.page-diable .site-header {
+    background-color: #171717;
+}
+
+.page-diable .hero-section {
+    background-color: #363131;
+}
+
+.page-diable .hero-section h2 {
+    color: #d65c5c;
+}
+
+.page-diable .hero-section article {
+    background-color: #443b3b;
+    border-left-color: #8f3030;
+}
+
+.page-diable .hero-section article h3 {
+    color: #d65c5c;
+}
+
+.page-diable .animal-profile {
+    background-color: #363131;
+    border-left: 4px solid #8f3030;
+}
+
+.page-diable .animal-info {
+    background-color: #443b3b;
+}
+
+.page-diable .animal-info strong {
+    color: #e06a6a;
+}
+
+.page-diable .sources {
+    background-color: #443b3b;
+}
+
+.page-diable .sources h3 {
+    color: #d65c5c;
+}
+
+.page-diable .sources a {
+    color: #e06a6a;
+}
+
+.page-diable .site-footer {
+    background-color: #171717;
+}
+
+
+/* TABLEAU DIABLE */
+
+.page-diable table {
+    border-color: #8f3030;
+}
+
+.page-diable th {
+    background-color: #171717;
+    color: white;
+}
+
+.page-diable td {
+    background-color: #443b3b;
+    color: white;
+    border-bottom-color: #665555;
 }
